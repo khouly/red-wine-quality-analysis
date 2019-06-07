@@ -102,43 +102,43 @@ Univariate Plots Section
 
 The first observation from the summary of the variables is that the quality of the wines only varies between 3 to 8 with the majority being ranked as 5 or 6. The second observation is that some of the other variables like residual.sugar and chlorides have a relatively large Max compared to the Median, this indicates that there might be some outliers.
 
-<img src="red-wine-quality-analysis_files/figure-markdown_github/Univariate_Plots_2-1.png" style="display: block; margin: auto;" />
+<img src="README_figs/Univariate_Plots_2-1.png" style="display: block; margin: auto;" />
 
 The visual representation of the distribution of the quality variable is aligned with the summary, the quality of the wines only varies between 3 to 8 with the majority being ranked as 5 or 6.
 
-<img src="red-wine-quality-analysis_files/figure-markdown_github/Univariate_Plots_3-1.png" style="display: block; margin: auto;" />
+<img src="README_figs/Univariate_Plots_3-1.png" style="display: block; margin: auto;" />
 
 The above histogram shows that the data is skewed to the right.
 
-<img src="red-wine-quality-analysis_files/figure-markdown_github/Univariate_Plots_4-1.png" style="display: block; margin: auto;" />
+<img src="README_figs/Univariate_Plots_4-1.png" style="display: block; margin: auto;" />
 
 The above histogram shows that the data is skewed to the right.
 
-<img src="red-wine-quality-analysis_files/figure-markdown_github/Univariate_Plots_5-1.png" style="display: block; margin: auto;" />
+<img src="README_figs/Univariate_Plots_5-1.png" style="display: block; margin: auto;" />
 
 The above histogram shows that the data is skewed to the right.
 
-<img src="red-wine-quality-analysis_files/figure-markdown_github/Univariate_Plots_12-1.png" style="display: block; margin: auto;" />
+<img src="README_figs/Univariate_Plots_12-1.png" style="display: block; margin: auto;" />
 
 The above histogram shows that the chlorides data is somehow normally distributed with some outliers on the right, as the case with most of the independent variables the plot shows that if we remove the top few % of the chlorides variable it becomes more and more normally distributed, specifically after removing the top 4%. The same applies for the other variables with outliers.
 
-<img src="red-wine-quality-analysis_files/figure-markdown_github/Univariate_Plots_7-1.png" style="display: block; margin: auto;" />
+<img src="README_figs/Univariate_Plots_7-1.png" style="display: block; margin: auto;" />
 
 The above histogram shows that the data is skewed to the right.
 
-<img src="red-wine-quality-analysis_files/figure-markdown_github/Univariate_Plots_8-1.png" style="display: block; margin: auto;" />
+<img src="README_figs/Univariate_Plots_8-1.png" style="display: block; margin: auto;" />
 
 The above histogram shows that the data is skewed to the right.
 
-<img src="red-wine-quality-analysis_files/figure-markdown_github/Univariate_Plots_9-1.png" style="display: block; margin: auto;" />
+<img src="README_figs/Univariate_Plots_9-1.png" style="display: block; margin: auto;" />
 
 The above histogram shows that the pH is somehow normally distributed with some outliers on the right.
 
-<img src="red-wine-quality-analysis_files/figure-markdown_github/Univariate_Plots_10-1.png" style="display: block; margin: auto;" />
+<img src="README_figs/Univariate_Plots_10-1.png" style="display: block; margin: auto;" />
 
 The above histogram shows that the data is skewed to the right.
 
-<img src="red-wine-quality-analysis_files/figure-markdown_github/Univariate_Plots_11-1.png" style="display: block; margin: auto;" />
+<img src="README_figs/Univariate_Plots_11-1.png" style="display: block; margin: auto;" />
 
 The above plots show the distribution of all the dependent variables and it is clear that most of them are normally distributed with some being skewed to the right. It is also clear that as previously inferred from the summary, there are some outliers in some of the variables.
 
@@ -170,13 +170,13 @@ As for operations on the data, I changed the data type of the quality variable t
 Bivariate Plots Section
 -----------------------
 
-<img src="red-wine-quality-analysis_files/figure-markdown_github/Bivariate_Plots_1-1.png" style="display: block; margin: auto;" />
+<img src="README_figs/Bivariate_Plots_1-1.png" style="display: block; margin: auto;" />
 
 To start of the bivariate exploration, I generated the ggpairs plot to visualize all the relationships between the variables. As you can see the quality column is showing box plots as now it is treated as a categorical variable after changing it to a factor. There are some correlations in between the independent variables, and more importantly there are some trends in the box plots of the quality column that need further exploration.
 
 Will start of by exploring the relationships between the independent variables. The first thing that I noticed is the relatively high correlations between the acidity variables (fixed.acidity, volatile.acidity, citric.acid)
 
-<img src="red-wine-quality-analysis_files/figure-markdown_github/Bivariate_Plots_2-1.png" style="display: block; margin: auto;" /><img src="red-wine-quality-analysis_files/figure-markdown_github/Bivariate_Plots_2-2.png" style="display: block; margin: auto;" /><img src="red-wine-quality-analysis_files/figure-markdown_github/Bivariate_Plots_2-3.png" style="display: block; margin: auto;" />
+<img src="README_figs/Bivariate_Plots_2-1.png" style="display: block; margin: auto;" /><img src="README_figs/Bivariate_Plots_2-2.png" style="display: block; margin: auto;" /><img src="README_figs/Bivariate_Plots_2-3.png" style="display: block; margin: auto;" />
 
     ## 
     ##  Pearson's product-moment correlation
@@ -216,7 +216,7 @@ Will start of by exploring the relationships between the independent variables. 
 
 From the above 3 plots it is clear that there are some relationships between these variables. The correlation between the the fixed and volatile acidity is not as strong as the correlation between each of them and the citric acid. But this is just in terms of the strength of the correlation, because in terms of the direction, the fixed acidity is positively correlated while the volatile acidity is negatively correlated. Also, the correlation with the fixed acidity is stronger than the correlation with the volatile acidity. As for the last observation, both these the correlations become weaker with higher levels of citric acid.
 
-<img src="red-wine-quality-analysis_files/figure-markdown_github/Bivariate_Plots_3-1.png" style="display: block; margin: auto;" />
+<img src="README_figs/Bivariate_Plots_3-1.png" style="display: block; margin: auto;" />
 
 From the box plots above it seems that the fixed acidity is relatively a weak factor when it comes to affecting the quality. As for volatile acidity and citric acid, there are negative and positive respective patterns clear when it comes to the quality of wines, also both these patterns become weaker the better the quality gets.
 
@@ -230,41 +230,41 @@ From the box plots above it seems that the fixed acidity is relatively a weak fa
     ## 5 7              11.5           11.5          9.2        14     199
     ## 6 8              12.1           12.2          9.8        14      18
 
-<img src="red-wine-quality-analysis_files/figure-markdown_github/Bivariate_Plots_4-1.png" style="display: block; margin: auto;" /><img src="red-wine-quality-analysis_files/figure-markdown_github/Bivariate_Plots_4-2.png" style="display: block; margin: auto;" />
+<img src="README_figs/Bivariate_Plots_4-1.png" style="display: block; margin: auto;" /><img src="README_figs/Bivariate_Plots_4-2.png" style="display: block; margin: auto;" />
 
 Based on the summaries and plots of the relationship between alcohol and quality above there seems to be a pattern between them. From the box plots it is clear that the higher the median of the alcohol the better the quality is, this pattern is true except for the quality value of 5, but it seems that this quality level has the most outliers. From the second line plot it is clear that these outliers pulled the mean a bit higher than the median, but still it doesn't follow the same pattern observed for the other quality values. Another observation, is the the maximum alcohol level for the top 3 values is 14% which might be an industry standard for higher quality wines.
 
 Other general trends between quality and the independent variables can be identified from the box plots below, usual properties of better quality wines are listed below each plot.
 
-<img src="red-wine-quality-analysis_files/figure-markdown_github/Bivariate_Plots_5-1.png" style="display: block; margin: auto;" />
+<img src="README_figs/Bivariate_Plots_5-1.png" style="display: block; margin: auto;" />
 
 Residual sugar: no clear relation
 
-<img src="red-wine-quality-analysis_files/figure-markdown_github/Bivariate_Plots_6-1.png" style="display: block; margin: auto;" />
+<img src="README_figs/Bivariate_Plots_6-1.png" style="display: block; margin: auto;" />
 
 Chlorides: the less the better
 
-<img src="red-wine-quality-analysis_files/figure-markdown_github/Bivariate_Plots_7-1.png" style="display: block; margin: auto;" />
+<img src="README_figs/Bivariate_Plots_7-1.png" style="display: block; margin: auto;" />
 
 Free sulfur dioxide: none linear relation
 
-<img src="red-wine-quality-analysis_files/figure-markdown_github/Bivariate_Plots_8-1.png" style="display: block; margin: auto;" />
+<img src="README_figs/Bivariate_Plots_8-1.png" style="display: block; margin: auto;" />
 
 Bound sulfur dioxide: none linear relation
 
-<img src="red-wine-quality-analysis_files/figure-markdown_github/Bivariate_Plots_9-1.png" style="display: block; margin: auto;" />
+<img src="README_figs/Bivariate_Plots_9-1.png" style="display: block; margin: auto;" />
 
 Total sulfur dioxide: none linear relation
 
-<img src="red-wine-quality-analysis_files/figure-markdown_github/Bivariate_Plots_10-1.png" style="display: block; margin: auto;" />
+<img src="README_figs/Bivariate_Plots_10-1.png" style="display: block; margin: auto;" />
 
 Density: the less the better
 
-<img src="red-wine-quality-analysis_files/figure-markdown_github/Bivariate_Plots_11-1.png" style="display: block; margin: auto;" />
+<img src="README_figs/Bivariate_Plots_11-1.png" style="display: block; margin: auto;" />
 
 pH: the less the better
 
-<img src="red-wine-quality-analysis_files/figure-markdown_github/Bivariate_Plots_12-1.png" style="display: block; margin: auto;" />
+<img src="README_figs/Bivariate_Plots_12-1.png" style="display: block; margin: auto;" />
 
 Sulphates: the more the better
 
@@ -281,15 +281,15 @@ Below is a summary of trends between quality and the independent variables: \* F
 Multivariate Plots Section
 --------------------------
 
-<img src="red-wine-quality-analysis_files/figure-markdown_github/Multivariate_Plots_1-1.png" style="display: block; margin: auto;" />
+<img src="README_figs/Multivariate_Plots_1-1.png" style="display: block; margin: auto;" />
 
 Exploring the relationship between the free and bound sulfur dioxide by different quality levels confirms that it is a non-liner relationship between the quality and sulfur dioxide, as it is clear that the pattern from the highest quality is quite similar to the lowest quality.
 
-<img src="red-wine-quality-analysis_files/figure-markdown_github/Multivariate_Plots_2-1.png" style="display: block; margin: auto;" />
+<img src="README_figs/Multivariate_Plots_2-1.png" style="display: block; margin: auto;" />
 
 From the above plot it is clear that there is a relationship strong negative correlation between the total acidity and the pH as we would expect, but there are no clear patterns of any correlation with the quality of the wines.
 
-<img src="red-wine-quality-analysis_files/figure-markdown_github/Multivariate_Plots_3-1.png" style="display: block; margin: auto;" />
+<img src="README_figs/Multivariate_Plots_3-1.png" style="display: block; margin: auto;" />
 
 Further analysis shows that there are correlations between citric acid, fixed acidity and pH for all quality levels. This information will be useful in avoiding having more than one of them in the modeling part to avoid issues.
 
@@ -337,7 +337,7 @@ Final Plots and Summary
 
 ### Plot One
 
-<img src="red-wine-quality-analysis_files/figure-markdown_github/Plot_One-1.png" style="display: block; margin: auto;" />
+<img src="README_figs/Plot_One-1.png" style="display: block; margin: auto;" />
 
 ### Description One
 
@@ -345,7 +345,7 @@ The visual representation of the distribution of the quality variable seems to b
 
 ### Plot Two
 
-<img src="red-wine-quality-analysis_files/figure-markdown_github/Plot_Two-1.png" style="display: block; margin: auto;" />
+<img src="README_figs/Plot_Two-1.png" style="display: block; margin: auto;" />
 
 ### Description Two
 
@@ -355,7 +355,7 @@ An interesting observation regarding the correlations between fixed and volatile
 
 ### Plot Three
 
-<img src="red-wine-quality-analysis_files/figure-markdown_github/Plot_Three-1.png" style="display: block; margin: auto;" />
+<img src="README_figs/Plot_Three-1.png" style="display: block; margin: auto;" />
 
 ### Description Three
 
